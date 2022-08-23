@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:  #FFFFFF;
+;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:   #FFFFFF;
+;
+}
+
+
+// Font family
+$font-primary: "Inter", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+// Font weight
+$fw-light: 300;
+$fw-normal: 400;
+$fw-bold: 500;
+$fw-black: 700;
+
+//  Font size
+$fs-default: 16px;
+$fs-10: 11px;
+$fs-11: 11px;
+$fs-12: 12px;
+$fs-13: 13px;
+$fs-14: 14px;
+$fs-15: 15px;
+$fs-16: 16px;
+
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-36: 36px;
+$fs-64: 64px;
+// Color
+$color-white: #fff;
+$color-black: #000;
+$color-bg-gray: #f7f7f7;
+
+$color-border-0: #e8e8e8;
+$color-border-1h: #e4e4e4;
+$color-border-input: #d9d9d9;
+$color-red-0: #e92c2c;
+$color-green-0: #00ba34;
+$color-green-1: rgba(0, 186, 52, 0.1);
+$color-blue-0: #0085ff;
+$color-blue-1: rgba(0, 133, 255, 0.1);
+$color-orange-0: #f98600;
+$color-orange-1: rgba(255, 150, 27, 0.1);
+
+$color-text-light: #969696;
+$color-text-gray: #585757;
+$color-text: #1c1c1c;
+
+// Box shadow
+$bs-default: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.06),
+  0px 1px 1px rgba(0, 0, 0, 0.08);
