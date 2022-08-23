@@ -1,6 +1,5 @@
 @import "../../global/index.scss";
-.loginContainer {
-
+.login {
   background: #e5e5e5;
   width: 100vw;
   height: 100vh;
@@ -18,16 +17,26 @@
     font-size: $fs-16;
     line-height: 20px;
   }
-  &_input {
-    width: 300px;
-    height: 45px;
-    background-color: #224957;
-    color: #ffffff;
-    padding: 12px 18px;
-    border-radius: 10px;
-    outline: none;
+  &__input{
+    display: flex;
+    flex-flow: column wrap;
+    & > input {
+      width: 300px;
+      height: 45px;
+      background-color: #224957;
+      color: #ffffff;
+      padding: 12px 18px;
+      border-radius: 10px;
+      outline: none;
+    }
+    & > span{
+      color: $color-red-0;
+      font-size: 12px;
+      font-weight: 400;
+    }
   }
-  &_tool {
+  
+  &__tool {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -36,7 +45,7 @@
     position: relative;
    
   }
-  &_loginButton{
+  &__button{
     width: 300px;
     height: 45px;
     left: 490px;
@@ -48,11 +57,12 @@
     font-size: $fs-16;
     border: none;
   }
-  &_image{
+  &__image{
     position: absolute;
     bottom: 0;
     width: 100%;
   }
+ 
 }
 .toolText {
   font-family: "Montserrat", sans-serif;
@@ -60,9 +70,8 @@
   line-height: 17px;
   font-weight: $fw-bold;
   cursor: pointer;
-
 }
-.loginText {
+.text {
   font-style: normal;
   font-weight: $fw-normal;
   text-align: center;
